@@ -1,3 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background: peachpuff;
+  background: papayawhip;
+  text-align: center;
+}
+.container {
+  display: flex;
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 2.5em;
+  flex-wrap: wrap;
+}
+div {
+  background: white;
+  border: black solid 1px;
+  margin: .5%;
+}
+.a {
+  width: 100%;
+}
+.b, .c, .d, .e, .f, .g {
+  width: 25%;
+  flex-grow: 1;
+}
+.h {
+  width: 100%;
+  min-height: 30vh;
+}
+@media (min-width: 600px) {
+  .a {
+    height: 25vh;
+  }
+  .b, .c, .d, .e, .f, .g {
+    flex-grow: 0;
+    height: 32vh;
+  }
+  .h {
+    width: 18%;
+    flex-grow: 1;
+    margin-top: -33vh;
+  }
 }
